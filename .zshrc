@@ -6,6 +6,13 @@ stty stop undef
 # enable complemente
 autoload -U compinit; compinit
 
+# enable History
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=1000000
+setopt hist_ignore_dups
+setopt share_history
+
 # emacs keybind
 bindkey -e
 
