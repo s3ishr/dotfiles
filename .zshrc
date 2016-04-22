@@ -3,6 +3,9 @@
 # Terminal-lock: ^S -> (undef)
 stty stop undef
 
+# enable complemente
+autoload -U compinit; compinit
+
 # emacs keybind
 bindkey -e
 
